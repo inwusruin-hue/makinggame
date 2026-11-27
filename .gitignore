@@ -1,0 +1,4 @@
+game/.godot/
+export/
+*.tmp
+.DS_Store

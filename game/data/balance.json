@@ -1,0 +1,36 @@
+{
+  "machine": {
+    "left": 380, "right": 1020, "back_wall": 40, "edge": 520,
+    "pusher_front_min": 140, "pusher_front_max": 230, "pusher_period": 2.4,
+    "dropper_speed": 280, "drop_y": 186
+  },
+  "pieces": {
+    "coin_radius": 17, "figure_radius": 16,
+    "coin_mass": 1.0, "figure_mass": 1.4,
+    "linear_damp": 4.0, "angular_damp": 6.0, "friction": 0.4, "bounce": 0.05,
+    "grid_spacing": 37, "initial_fill": 0.96, "initial_figures": 30,
+    "max_bodies": 200, "warmup_seconds": 1.5
+  },
+  "economy": {
+    "start_coins": 25, "coins_per_wave": 10, "gold_per_coin": 5,
+    "figure_drop_chance": 0.3, "figure_refill_per_wave": 4, "bomb_every": 8
+  },
+  "bomb": { "radius": 140, "impulse": 520, "delay": 0.35 },
+  "chain": { "window": 1.0, "min_show": 3 },
+  "lane": { "top": 590, "bottom": 770, "defense_x": 110, "unit_max_x": 1480, "enemy_spawn_x": 1560 },
+  "figure_weights": { "sword": 35, "bow": 30, "mage": 15, "guard": 15, "gold": 5 },
+  "units": {
+    "sword": { "name": "검사",   "hp": 60,  "atk": 10, "range": 34,  "speed": 70, "cooldown": 0.8 },
+    "bow":   { "name": "궁수",   "hp": 35,  "atk": 8,  "range": 260, "speed": 60, "cooldown": 1.0 },
+    "mage":  { "name": "마법사", "hp": 30,  "atk": 14, "range": 200, "speed": 55, "cooldown": 1.6, "splash": 70 },
+    "guard": { "name": "방패병", "hp": 140, "atk": 5,  "range": 30,  "speed": 50, "cooldown": 1.0 },
+    "gold":  { "name": "황금 기사", "hp": 160, "atk": 26, "range": 40, "speed": 80, "cooldown": 0.7 }
+  },
+  "enemies": {
+    "grunt": { "hp": 45,  "atk": 6,  "range": 30, "speed": 60, "cooldown": 1.0, "gold": 6, "breach_damage": 5 },
+    "boss":  { "hp": 600, "atk": 22, "range": 44, "speed": 28, "cooldown": 1.2, "gold": 80, "breach_damage": 30 }
+  },
+  "waves": { "total": 12, "base_count": 4, "per_wave": 2, "spawn_interval": 1.2, "boss_every": 5, "hp_scale_per_wave": 0.15, "break_seconds": 3.0 },
+  "merge": { "count": 3, "stat_mult": 1.8, "max_star": 3 },
+  "defense_hp": 100
+}
